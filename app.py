@@ -4,8 +4,8 @@ from image_generator_bedrock import process_biography_for_image
 
 # Configure the page
 st.set_page_config(
-    page_title="Future Vision Quiz",
-    page_icon="🔮",
+    page_title="Future Vision Bio App",
+    page_icon="	✨",
     layout="wide"
 )
 
@@ -50,7 +50,7 @@ questions = [
 ]
 
 # Main app layout
-st.title("🔮 Future Vision Quiz")
+st.title("	✨ Future Vision Bio App")
 st.write("Answer these questions to discover your potential future path!")
 
 # Name input section (only shown at the beginning)
