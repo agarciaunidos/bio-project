@@ -9,6 +9,7 @@ import os
 # Constants for SDXL
 MODEL_ID = "stability.stable-diffusion-xl-v1"
 DEFAULT_SEED = 12345
+REGION='us-east-1'
 
 # Negative prompts for better image quality
 NEGATIVE_PROMPTS = [
@@ -29,7 +30,7 @@ def generate_future_image(prompt, career_area):
     """Generate an image using SDXL on Bedrock with improved prompt"""
     try:
         # Initialize Bedrock client
-        bedrock_runtime = boto3.client('bedrock-runtime')
+        bedrock_runtime = boto3.client('bedrock-runtime',region = REGION)
         
         # Enhanced base prompt based on career area
         base_prompts = {
