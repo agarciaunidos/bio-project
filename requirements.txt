@@ -18,4 +18,4 @@ streamlit-authenticator
 langchain-cohere
 requests
 pillow
-base64
+
