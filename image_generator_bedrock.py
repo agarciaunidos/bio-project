@@ -30,7 +30,7 @@ def generate_future_image(prompt, career_area):
     """Generate an image using SDXL on Bedrock with improved prompt"""
     try:
         # Initialize Bedrock client
-        bedrock_runtime = boto3.client('bedrock-runtime',region = REGION)
+        bedrock_runtime = boto3.client('bedrock-runtime')
         
         # Enhanced base prompt based on career area
         base_prompts = {
